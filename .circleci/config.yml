@@ -15,8 +15,7 @@ jobs:
           name: Installing dependencies
           command: |
             set -x
-            apt-get install python3-pip python3-dev build-essential
-            apk add --no-cache --no-progress bash py-pip
+            apk add --no-cache --no-progress python3-pip python3-dev build-essential bash py-pip
             pip install --quiet docker-compose
       - run:
           name: Preparing the environment
